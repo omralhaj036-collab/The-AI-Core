@@ -1,0 +1,6 @@
+{
+  "name": "الجوهرة الذكية (The AI Core)",
+  "description": "كيان حي ذكي لجهازك اللوحي يتعلم مهامك وبرنامجك اليومي ويخاطبك وينجز ما تريد.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#181824"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </radialGradient>
+    <linearGradient id="orbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="50%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background rounded canvas -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect width="512" height="512" rx="128" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="4"/>
+
+  <!-- Atmospheric Aura -->
+  <circle cx="256" cy="256" r="180" fill="url(#glowGrad)"/>
+
+  <!-- Orbital Synaptic Rings -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="rgba(249,115,22,0.3)" stroke-width="3" stroke-dasharray="20 10"/>
+  <circle cx="256" cy="256" r="140" fill="none" stroke="rgba(168,85,247,0.25)" stroke-width="2"/>
+
+  <!-- Core Pulsing Orb -->
+  <circle cx="256" cy="256" r="110" fill="url(#orbGrad)" filter="url(#glow)"/>
+  
+  <!-- Inner Heart Dark Void -->
+  <circle cx="256" cy="256" r="85" fill="#08080c"/>
+
+  <!-- Brain / Diamond Synapse Spark -->
+  <path d="M256 190 L300 256 L256 322 L212 256 Z" fill="#fb923c" filter="url(#glow)"/>
+  <circle cx="256" cy="256" r="18" fill="#ffffff"/>
+</svg>
