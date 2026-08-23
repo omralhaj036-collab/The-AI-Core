@@ -1,26 +1,17 @@
+```json
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
-    "module": "ESNext",
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "allowJs": true,
-    "jsx": "react-jsx",
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
-    "allowImportingTsExtensions": true,
-    "noEmit": true
-  }
+  "name": "Ojen AI Core",
+  "short_name": "Ojen",
+  "start_url": "/The-AI-Core/index.html",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#ffd700",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/omralhaj036-collab/The-AI-Core/main/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
+```
