@@ -20,7 +20,7 @@ export class SpeechService {
         this.recognition = new SpeechRecognition();
         this.recognition.continuous = false;
         this.recognition.interimResults = true;
-        this.recognition.lang = 'ar-SA';
+        this.recognition.lang = navigator.language || "ar-SA";
       }
 
       if ('speechSynthesis' in window) {
@@ -140,8 +140,8 @@ export class SpeechService {
     }
 
     const utterance = new SpeechSynthesisUtterance(cleanText);
-    utterance.lang = 'ar-SA';
-    utterance.rate = 1.05;
+    utterance.lang = navigator.language || "ar-SA";
+    utterance.rate = 1.0;
     utterance.pitch = 1.0;
 
     // Pick best Arabic voice if available
